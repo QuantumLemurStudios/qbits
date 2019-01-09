@@ -5,7 +5,8 @@
   "main": "src/generated/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "kotlinc-js src/*.kt -output src/generated/app.js"
+    "build": "kotlinc-js src/*.kt -output generated/app.js -source-map -module-kind commonjs",
+    "database-Reset": "node scripts/database/Reset.js"
   },
   "author": "Tyler Scott <tyduptyler13@gmail.com>",
   "license": "MIT",

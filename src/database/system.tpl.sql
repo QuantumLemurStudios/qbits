@@ -6,6 +6,7 @@ CREATE TABLE IF NOT EXISTS <<DATABASE-NAME>>.systemdata (
     dataval VARCHAR(15)
 );
 
---Insert default values without overwriting existing ones.
+-- Insert default values without overwriting existing ones.
 INSERT IGNORE INTO <<DATABASE-NAME>>.systemdata VALUES
-    ("dbinstallversion","0");
+  ("dbinstallversion",
+   "0");
